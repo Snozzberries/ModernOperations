@@ -1,0 +1,36 @@
+{
+     "@odata.type": "#microsoft.graph.iosStoreApp",
+     "displayName": "Adobe Acrobat Reader for Microsoft Intune (Deprecated)",
+     "publisher": "Adobe",
+     "largeIcon": null,
+     "isFeatured": false,
+     "privacyInformationUrl": "",
+     "informationUrl": null,
+     "owner": "",
+     "developer": "",
+     "notes": "",
+     "uploadState": 2,
+     "publishingState": "processing",
+     "roleScopeTagIds": [],
+     "dependentAppCount": 0,
+     "supersedingAppCount": 0,
+     "supersededAppCount": 0,
+     "bundleId": "",
+     "appStoreUrl": "https://itunes.apple.com/us/app/adobe-acrobat-reader-for-microsoft-intune/id1051980424?mt=8&uo=4",
+     "applicableDeviceType": {
+          "iPad": true,
+          "iPhoneAndIPod": true
+     },
+     "minimumSupportedOperatingSystem": {
+          "v8_0": true,
+          "v9_0": false,
+          "v10_0": false,
+          "v11_0": false,
+          "v12_0": false,
+          "v13_0": false,
+          "v14_0": false,
+          "v15_0": false,
+          "v16_0": false,
+          "v17_0": false
+     }
+}

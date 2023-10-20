@@ -1,0 +1,54 @@
+{
+     "templateId": null,
+     "displayName": "Office 365 App Control",
+     "state": "disabled",
+     "grantControls": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "browser",
+               "mobileAppsAndDesktopClients"
+          ],
+          "platforms": null,
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "devices": null,
+          "clientApplications": null,
+          "applications": {
+               "includeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000",
+                    "00000003-0000-0ff1-ce00-000000000000"
+               ],
+               "excludeApplications": [],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "All"
+               ],
+               "excludeUsers": [],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          }
+     },
+     "sessionControls": {
+          "disableResilienceDefaults": null,
+          "applicationEnforcedRestrictions": null,
+          "signInFrequency": null,
+          "persistentBrowser": null,
+          "continuousAccessEvaluation": null,
+          "secureSignInSession": null,
+          "cloudAppSecurity": {
+               "cloudAppSecurityType": "mcasConfigured",
+               "isEnabled": true
+          }
+     }
+}

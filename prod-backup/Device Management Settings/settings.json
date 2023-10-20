@@ -1,0 +1,15 @@
+{
+     "deviceComplianceCheckinThresholdDays": 0,
+     "isScheduledActionEnabled": true,
+     "secureByDefault": false,
+     "enhancedJailBreak": false,
+     "deviceInactivityBeforeRetirementInDay": 0,
+     "derivedCredentialProvider": "notConfigured",
+     "derivedCredentialUrl": null,
+     "androidDeviceAdministratorEnrollmentEnabled": false,
+     "ignoreDevicesForUnsupportedSettingsEnabled": false,
+     "enableLogCollection": true,
+     "enableAutopilotDiagnostics": true,
+     "enableEnhancedTroubleshootingExperience": false,
+     "enableDeviceGroupMembershipReport": false
+}

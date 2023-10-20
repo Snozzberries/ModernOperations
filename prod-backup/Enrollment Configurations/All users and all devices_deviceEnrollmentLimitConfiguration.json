@@ -1,0 +1,19 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentLimitConfiguration",
+     "displayName": "All users and all devices",
+     "description": "This is the default Device Limit Restriction applied with the lowest priority to all users regardless of group membership.",
+     "priority": 0,
+     "roleScopeTagIds": [],
+     "deviceEnrollmentConfigurationType": "limit",
+     "limit": 15,
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

@@ -1,0 +1,50 @@
+{
+     "templateId": null,
+     "displayName": "Exchange Online Requires Compliant Device",
+     "state": "disabled",
+     "sessionControls": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [],
+          "clientAppTypes": [
+               "browser",
+               "mobileAppsAndDesktopClients"
+          ],
+          "platforms": null,
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "devices": null,
+          "clientApplications": null,
+          "applications": {
+               "includeApplications": [
+                    "00000002-0000-0ff1-ce00-000000000000"
+               ],
+               "excludeApplications": [],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [],
+               "excludeUsers": [],
+               "includeGroups": [
+                    "60ea67af-aab0-46f5-83a4-c93bfc7bd36a"
+               ],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          }
+     },
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "compliantDevice"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
+     }
+}

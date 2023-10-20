@@ -1,0 +1,12 @@
+{
+     "bindStatus": "notBound",
+     "lastAppSyncDateTime": null,
+     "lastAppSyncStatus": "none",
+     "ownerUserPrincipalName": "",
+     "ownerOrganizationName": "",
+     "enrollmentTarget": "none",
+     "targetGroupIds": [],
+     "deviceOwnerManagementEnabled": false,
+     "androidDeviceOwnerFullyManagedEnrollmentEnabled": false,
+     "managedGooglePlayInitialScopeTagIds": []
+}

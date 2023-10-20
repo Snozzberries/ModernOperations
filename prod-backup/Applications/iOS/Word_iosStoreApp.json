@@ -1,0 +1,56 @@
+{
+     "@odata.type": "#microsoft.graph.iosStoreApp",
+     "displayName": "Word",
+     "publisher": "Microsoft Corporation",
+     "largeIcon": null,
+     "isFeatured": false,
+     "privacyInformationUrl": "",
+     "informationUrl": null,
+     "owner": "",
+     "developer": "",
+     "notes": "",
+     "uploadState": 1,
+     "publishingState": "published",
+     "roleScopeTagIds": [],
+     "dependentAppCount": 0,
+     "supersedingAppCount": 0,
+     "supersededAppCount": 0,
+     "bundleId": "com.microsoft.Office.Word",
+     "appStoreUrl": "https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8&uo=4",
+     "applicableDeviceType": {
+          "iPad": true,
+          "iPhoneAndIPod": true
+     },
+     "minimumSupportedOperatingSystem": {
+          "v8_0": true,
+          "v9_0": false,
+          "v10_0": false,
+          "v11_0": false,
+          "v12_0": false,
+          "v13_0": false,
+          "v14_0": false,
+          "v15_0": false,
+          "v16_0": false,
+          "v17_0": false
+     },
+     "assignments": [
+          {
+               "intent": "required",
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "sg-Sales and Marketing",
+                    "groupType": "StaticMembership"
+               },
+               "settings": {
+                    "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
+                    "vpnConfigurationId": null,
+                    "uninstallOnDeviceRemoval": null,
+                    "isRemovable": null,
+                    "preventManagedAppBackup": null
+               }
+          }
+     ]
+}
