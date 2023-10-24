@@ -26,11 +26,11 @@
                "applicationFilter": null
           },
           "users": {
-               "includeUsers": [],
-               "excludeUsers": [],
-               "includeGroups": [
-                    "60ea67af-aab0-46f5-83a4-c93bfc7bd36a"
+               "includeUsers": [
+                    "None"
                ],
+               "excludeUsers": [],
+               "includeGroups": [],
                "excludeGroups": [],
                "includeRoles": [],
                "excludeRoles": [],

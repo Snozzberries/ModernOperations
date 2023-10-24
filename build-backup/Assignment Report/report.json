@@ -1,0 +1,28 @@
+[
+     {
+          "groupName": "sg-Sales and Marketing",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Device Configurations": [
+                    "iOS device restriction to block Game Center"
+               ],
+               "Compliance Policies": [
+                    "Contoso MDM Compliance Policy for iOS"
+               ],
+               "Applications": [
+                    "Outlook",
+                    "Excel",
+                    "PowerPoint",
+                    "Word",
+                    "OneDrive",
+                    "Outlook",
+                    "Adobe Acrobat Reader for Intune Android (Deprecated)"
+               ],
+               "App Protection": [
+                    "iOS apps data leak prevention policy",
+                    "Android apps data leak prevention policy"
+               ]
+          }
+     }
+]

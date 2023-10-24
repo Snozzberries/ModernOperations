@@ -132,5 +132,17 @@
                "name": "Default",
                "value": "skype;app-settings;calshow;itms;itmss;itms-apps;itms-appss;itms-services;"
           }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "sg-Sales and Marketing",
+                    "groupType": "StaticMembership"
+               }
+          }
      ]
 }

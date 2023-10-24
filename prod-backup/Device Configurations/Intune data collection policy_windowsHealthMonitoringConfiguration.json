@@ -1,0 +1,60 @@
+{
+     "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "deviceManagementApplicabilityRuleOsEdition": null,
+     "deviceManagementApplicabilityRuleOsVersion": null,
+     "deviceManagementApplicabilityRuleDeviceMode": null,
+     "description": "Windows Health Monitoring policy for Endpoint Analytics",
+     "displayName": "Intune data collection policy",
+     "allowDeviceHealthMonitoring": "enabled",
+     "configDeviceHealthMonitoringScope": "bootPerformance",
+     "configDeviceHealthMonitoringCustomScope": null,
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-Fast",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-Broad",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-First",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-Test",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

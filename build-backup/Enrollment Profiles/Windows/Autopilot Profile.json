@@ -1,0 +1,23 @@
+{
+     "@odata.type": "#microsoft.graph.azureADWindowsAutopilotDeploymentProfile",
+     "displayName": "Autopilot Profile",
+     "description": "",
+     "language": "os-default",
+     "enrollmentStatusScreenSettings": null,
+     "extractHardwareHash": false,
+     "deviceNameTemplate": "",
+     "deviceType": "windowsPc",
+     "enableWhiteGlove": false,
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "managementServiceAppId": null,
+     "outOfBoxExperienceSettings": {
+          "hidePrivacySettings": true,
+          "hideEULA": true,
+          "userType": "standard",
+          "deviceUsageType": "singleUser",
+          "skipKeyboardSelectionPage": false,
+          "hideEscapeLink": false
+     }
+}

@@ -1,0 +1,23 @@
+{
+     "displayName": "Windows Autopatch - Driver Update Policy [Test]",
+     "description": "Driver Update Policy for device test group",
+     "approvalType": "automatic",
+     "deviceReporting": 0,
+     "newUpdates": 0,
+     "deploymentDeferralInDays": 0,
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "inventorySyncStatus": null,
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-Test",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

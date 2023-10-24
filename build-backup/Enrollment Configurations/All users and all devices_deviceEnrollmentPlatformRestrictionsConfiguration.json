@@ -1,0 +1,82 @@
+{
+     "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
+     "displayName": "All users and all devices",
+     "description": "This is the default Device Type Restriction applied with the lowest priority to all users regardless of group membership.",
+     "priority": 0,
+     "roleScopeTagIds": [],
+     "deviceEnrollmentConfigurationType": "platformRestrictions",
+     "iosRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "",
+          "osMaximumVersion": "",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "windowsRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "",
+          "osMaximumVersion": "",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "windowsHomeSkuRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "windowsMobileRestriction": {
+          "platformBlocked": true,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "",
+          "osMaximumVersion": "",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "androidRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "",
+          "osMaximumVersion": "",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "androidForWorkRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": "",
+          "osMaximumVersion": "",
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "macRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "macOSRestriction": {
+          "platformBlocked": false,
+          "personalDeviceEnrollmentBlocked": false,
+          "osMinimumVersion": null,
+          "osMaximumVersion": null,
+          "blockedManufacturers": [],
+          "blockedSkus": []
+     },
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}

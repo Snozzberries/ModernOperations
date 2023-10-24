@@ -1,0 +1,23 @@
+{
+     "displayName": "Windows Autopatch - Driver Update Policy [Broad]",
+     "description": "Driver Update Policy for device broad group",
+     "approvalType": "automatic",
+     "deviceReporting": 0,
+     "newUpdates": 0,
+     "deploymentDeferralInDays": 9,
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "inventorySyncStatus": null,
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace Devices-Windows Autopatch-Broad",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

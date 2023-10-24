@@ -194,5 +194,18 @@
      "appsSingleAppModeList": [],
      "appsVisibilityList": [],
      "compliantAppsList": [],
-     "networkUsageRules": []
+     "networkUsageRules": [],
+     "assignments": [
+          {
+               "source": "direct",
+               "intent": "apply",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "sg-Sales and Marketing",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
 }

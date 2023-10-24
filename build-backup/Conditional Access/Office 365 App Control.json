@@ -28,7 +28,7 @@
           },
           "users": {
                "includeUsers": [
-                    "None"
+                    "All"
                ],
                "excludeUsers": [],
                "includeGroups": [],

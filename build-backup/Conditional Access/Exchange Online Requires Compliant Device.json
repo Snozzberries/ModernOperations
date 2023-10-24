@@ -1,8 +1,8 @@
 {
      "templateId": null,
-     "displayName": "Office 365 App Control",
+     "displayName": "Exchange Online Requires Compliant Device",
      "state": "disabled",
-     "grantControls": null,
+     "sessionControls": null,
      "conditions": {
           "userRiskLevels": [],
           "signInRiskLevels": [],
@@ -18,8 +18,7 @@
           "clientApplications": null,
           "applications": {
                "includeApplications": [
-                    "00000002-0000-0ff1-ce00-000000000000",
-                    "00000003-0000-0ff1-ce00-000000000000"
+                    "00000002-0000-0ff1-ce00-000000000000"
                ],
                "excludeApplications": [],
                "includeUserActions": [],
@@ -27,11 +26,11 @@
                "applicationFilter": null
           },
           "users": {
-               "includeUsers": [
-                    "None"
-               ],
+               "includeUsers": [],
                "excludeUsers": [],
-               "includeGroups": [],
+               "includeGroups": [
+                    "60ea67af-aab0-46f5-83a4-c93bfc7bd36a"
+               ],
                "excludeGroups": [],
                "includeRoles": [],
                "excludeRoles": [],
@@ -39,16 +38,13 @@
                "excludeGuestsOrExternalUsers": null
           }
      },
-     "sessionControls": {
-          "disableResilienceDefaults": null,
-          "applicationEnforcedRestrictions": null,
-          "signInFrequency": null,
-          "persistentBrowser": null,
-          "continuousAccessEvaluation": null,
-          "secureSignInSession": null,
-          "cloudAppSecurity": {
-               "cloudAppSecurityType": "mcasConfigured",
-               "isEnabled": true
-          }
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "compliantDevice"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
      }
 }

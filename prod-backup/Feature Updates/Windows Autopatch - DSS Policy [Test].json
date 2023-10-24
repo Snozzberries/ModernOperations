@@ -1,0 +1,36 @@
+{
+     "displayName": "Windows Autopatch - DSS Policy [Test]",
+     "description": "DSS Policy for device test group",
+     "featureUpdateVersion": "Windows 10, version 21H2",
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "deployableContentDisplayName": null,
+     "endOfSupportDate": "2024-06-11T00:00:00Z",
+     "installLatestWindows10OnWindows11IneligibleDevice": false,
+     "rolloutSettings": {
+          "offerStartDateTimeInUTC": null,
+          "offerEndDateTimeInUTC": null,
+          "offerIntervalInDays": null
+     },
+     "assignments": [
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Modern Workplace - Windows 11 Pre-Release Test Devices",
+                    "groupType": "StaticMembership"
+               }
+          },
+          {
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Windows Autopatch - Test",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}
