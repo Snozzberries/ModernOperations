@@ -1,0 +1,67 @@
+{
+     "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+     "roleScopeTagIds": [
+          "0"
+     ],
+     "description": null,
+     "displayName": "Test",
+     "passwordRequired": false,
+     "passwordBlockSimple": false,
+     "passwordRequiredToUnlockFromIdle": false,
+     "passwordMinutesOfInactivityBeforeLock": null,
+     "passwordExpirationDays": null,
+     "passwordMinimumLength": null,
+     "passwordMinimumCharacterSetCount": null,
+     "passwordRequiredType": "deviceDefault",
+     "passwordPreviousPasswordBlockCount": null,
+     "requireHealthyDeviceReport": false,
+     "osMinimumVersion": null,
+     "osMaximumVersion": null,
+     "mobileOsMinimumVersion": null,
+     "mobileOsMaximumVersion": null,
+     "earlyLaunchAntiMalwareDriverEnabled": false,
+     "bitLockerEnabled": true,
+     "secureBootEnabled": false,
+     "codeIntegrityEnabled": false,
+     "memoryIntegrityEnabled": false,
+     "kernelDmaProtectionEnabled": false,
+     "virtualizationBasedSecurityEnabled": false,
+     "firmwareProtectionEnabled": false,
+     "storageRequireEncryption": false,
+     "activeFirewallRequired": false,
+     "defenderEnabled": false,
+     "defenderVersion": null,
+     "signatureOutOfDate": false,
+     "rtpEnabled": false,
+     "antivirusRequired": false,
+     "antiSpywareRequired": false,
+     "deviceThreatProtectionEnabled": false,
+     "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+     "configurationManagerComplianceRequired": false,
+     "tpmRequired": false,
+     "deviceCompliancePolicyScript": null,
+     "validOperatingSystemBuildRanges": [],
+     "scheduledActionsForRule": [
+          {
+               "ruleName": null,
+               "scheduledActionConfigurations": [
+                    {
+                         "gracePeriodHours": 0,
+                         "actionType": "block",
+                         "notificationTemplateId": "00000000-0000-0000-0000-000000000000",
+                         "notificationMessageCCList": []
+                    }
+               ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none"
+               }
+          }
+     ]
+}
