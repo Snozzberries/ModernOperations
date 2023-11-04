@@ -5,23 +5,67 @@
           "membershipRule": null,
           "assignedTo": {
                "Device Configurations": [
-                    "iOS device restriction to block Game Center"
+                    {
+                         "name": "iOS device restriction to block Game Center",
+                         "type": "iosGeneralDeviceConfiguration",
+                         "intent": "apply"
+                    }
                ],
                "Compliance Policies": [
-                    "Contoso MDM Compliance Policy for iOS"
+                    {
+                         "name": "Contoso MDM Compliance Policy for iOS",
+                         "type": "iosCompliancePolicy",
+                         "intent": ""
+                    }
                ],
                "Applications": [
-                    "Outlook",
-                    "Excel",
-                    "PowerPoint",
-                    "Word",
-                    "OneDrive",
-                    "Outlook",
-                    "Adobe Acrobat Reader for Intune Android (Deprecated)"
+                    {
+                         "name": "Outlook",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Excel",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "PowerPoint",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Word",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "OneDrive",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Outlook",
+                         "type": "androidStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Adobe Acrobat Reader for Intune Android (Deprecated)",
+                         "type": "androidStoreApp",
+                         "intent": "required"
+                    }
                ],
                "App Protection": [
-                    "iOS apps data leak prevention policy",
-                    "Android apps data leak prevention policy"
+                    {
+                         "name": "iOS apps data leak prevention policy",
+                         "type": "iosManagedAppProtection",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Android apps data leak prevention policy",
+                         "type": "androidManagedAppProtection",
+                         "intent": ""
+                    }
                ]
           }
      }
