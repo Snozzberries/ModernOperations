@@ -1,10 +1,10 @@
 # Intune Documentation 
 
-Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`"> 
+Intune backup and documentation <img align="right" width="96" height="96" src="./logo.png"> 
 
 **Tenant:** Build 
 
-**Document updated on:** 04/11/2023 21:47:16 
+**Document updated on:** 04/11/2023 22:01:26 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
