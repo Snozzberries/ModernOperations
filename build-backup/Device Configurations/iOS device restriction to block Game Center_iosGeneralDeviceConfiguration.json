@@ -6,7 +6,7 @@
      "deviceManagementApplicabilityRuleOsEdition": null,
      "deviceManagementApplicabilityRuleOsVersion": null,
      "deviceManagementApplicabilityRuleDeviceMode": null,
-     "description": "",
+     "description": "11192023T1138",
      "displayName": "iOS device restriction to block Game Center",
      "accountBlockModification": false,
      "activationLockAllowWhenSupervised": false,
