@@ -309,19 +309,5 @@
                     }
                ]
           }
-     },
-     {
-          "groupName": "Modern Workplace - Windows 11 Pre-Release Test Devices",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Feature Updates": [
-                    {
-                         "name": "Modern Workplace DSS Policy [Windows 11]",
-                         "type": "",
-                         "intent": ""
-                    }
-               ]
-          }
      }
 ]
