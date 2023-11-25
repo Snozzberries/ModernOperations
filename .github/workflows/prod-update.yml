@@ -1,7 +1,7 @@
-# This is a basic workflow that is manually triggered
-
 name: Push configuration to prod
-
+permissions:
+  id-token: write
+  contents: read
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -11,18 +11,74 @@ on:
     branches: [main]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
   prod-update:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    environment: prod
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-      - name: PWSH - Display the path
-        continue-on-error: true
-        run: echo ${env:PATH}
-        shell: pwsh
+      - name: Create Working Direcotry
+        run: |
+          mkdir ModernOperations
+          cd ModernOperations
+          mkdir ./prod-backup
+    # Pull current repository
+      - name: Checkout Repository
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+    # Install IntuneCD
+      - name: Install IntuneCD
+        run: |
+          pip3 install IntuneCD
+    # Setup secret file
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+          enable-AzPSSession: true
+      - name: Set Login File
+        uses: azure/powershell@v1
+        with:
+          inlineScript: |
+            $x=@{}
+            $x.TENANT_NAME="8391489f-9e15-4032-ad56-a05b3f69929d"
+            $x.CLIENT_ID="317208ef-be88-405e-be60-722615927c18"
+            $x.CLIENT_SECRET=$(Get-AzKeyVaultSecret -VaultName "kv-94840470" -Name "IntuneCDProd" -AsPlainText)
+            "{`"params`":$($x|ConvertTo-Json)}"|Out-File ../IntuneCD.prod.json
+          azPSVersion: "latest"
+    # IntuneCD Backup Prod
+      - name: PRE change prod backup
+        run: |  
+          IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
+          IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
+    # Push pre-change production backup
+      - name: Push PRE change prod backup
+      - uses: actions/checkout@v4
+      - run: |
+          git config user.name "PIPELINE.Server"
+          git config user.email "admin@M365x94840470.onmicrosoft.com"
+          git add .
+          git commit -m "PRE Prod Update - Intune config backup"
+          git push
+    # IntuneCD Push Build to Prod 
+      - name: PRE change prod backup
+        run: |  
+          IntuneCD-startupdate -m 1 -p ./build-backup/ -a ../IntuneCD.prod.json
+          IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
+          IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
+    # Push post-change production backup
+      - name: Push POST change prod backup
+      - uses: actions/checkout@v4
+      - run: |
+          git config user.name "PIPELINE.Server"
+          git config user.email "admin@M365x94840470.onmicrosoft.com"
+          git add .
+          git commit -m "POST Prod Update - Intune config backup"
+          git push
