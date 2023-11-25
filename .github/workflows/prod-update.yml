@@ -58,6 +58,7 @@ jobs:
         run: |  
           IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
+        shell: pwsh
     # Push pre-change production backup
       - uses: actions/checkout@v4
       - name: Push PRE change prod backup
@@ -68,11 +69,12 @@ jobs:
           git commit -m "PRE Prod Update - Intune config backup"
           git push
     # IntuneCD Push Build to Prod 
-      - name: PRE change prod backup
+      - name: Promote & POST change prod backup
         run: |  
           IntuneCD-startupdate -m 1 -p ./build-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
+        shell: pwsh
     # Push post-change production backup
       - uses: actions/checkout@v4
       - name: Push POST change prod backup
