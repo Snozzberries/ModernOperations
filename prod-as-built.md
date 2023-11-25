@@ -4,7 +4,7 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
 
 **Tenant:** Prod 
 
-**Document updated on:** 25/11/2023 02:13:34 
+**Document updated on:** 25/11/2023 02:14:01 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -541,7 +541,7 @@ Description: Windows Health Monitoring policy for Endpoint Analytics
 <a class="mk-toclify" id="ios-device-restriction-to-block-game-center"></a>
 ### iOS device restriction to block Game Center
 [[back to top](#table-of-contents)]
-Description: 11242023T1851 
+Description: 11242023T1905 
 <a class="mk-toclify" id="configuration"></a>
 #### Configuration 
 [[back to top](#table-of-contents)]
@@ -744,7 +744,7 @@ Description: 11242023T1851
 <a class="mk-toclify" id="win10-deviceconfig-restrictions"></a>
 ### Win10-DeviceConfig-Restrictions
 [[back to top](#table-of-contents)]
-Description: 11242023T1851 
+Description: 11242023T1905 
 <a class="mk-toclify" id="assignments"></a>
 #### Assignments 
 [[back to top](#table-of-contents)]
