@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 20/11/2023 20:16:19 
+**Document updated on:** 25/11/2023 01:28:22 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -781,7 +781,7 @@ Description: 11\-5\-2023T1716
 <a class="mk-toclify" id="test"></a>
 ## Test
 [[back to top](#table-of-contents)]
-Description: 11\-5\-2023T1716 
+Description: 11\-24\-2023T1824 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |  target   |filter type|filter name|
@@ -1078,7 +1078,7 @@ Description: 11202023T1312
 <a class="mk-toclify" id="win10-deviceconfig-restrictions"></a>
 ## Win10-DeviceConfig-Restrictions
 [[back to top](#table-of-contents)]
-Description: 11202023T1312 
+Description: 11\-24\-2023T1824 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |intent|  target   |filter type|filter name|
