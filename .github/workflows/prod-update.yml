@@ -39,8 +39,8 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          client-id: "34222416-ea27-48dc-833d-89b30b3e02fc"
+          tenant-id: "d72c695a-9a13-4853-afaa-80bf7aca75bc"
           allow-no-subscriptions: true
           enable-AzPSSession: true
       - name: Set Login File
