@@ -65,9 +65,10 @@ jobs:
         run: |
           git config user.name "PIPELINE.Server"
           git config user.email "admin@M365x94840470.onmicrosoft.com"
-          git add .
+          git add --all
+          git diff --name-only --staged -- prod-backup
           git commit -m "PRE Prod Update - Intune config backup"
-          git push
+          git push origin HEAD:main
         continue-on-error: true
     # IntuneCD Push Build to Prod 
       - name: Promote & POST change prod backup
@@ -82,6 +83,7 @@ jobs:
         run: |
           git config user.name "PIPELINE.Server"
           git config user.email "admin@M365x94840470.onmicrosoft.com"
-          git add .
+          git add --all
+          git diff --name-only --staged -- prod-backup
           git commit -m "POST Prod Update - Intune config backup"
-          git push
+          git push origin HEAD:main
