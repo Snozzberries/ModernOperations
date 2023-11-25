@@ -22,7 +22,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
       - name: Create Working Direcotry
-        run: |
+      - run: |
           mkdir ModernOperations
           cd ModernOperations
           mkdir ./prod-backup
@@ -33,18 +33,18 @@ jobs:
           fetch-depth: 0
     # Install IntuneCD
       - name: Install IntuneCD
-        run: |
+      - run: |
           pip3 install IntuneCD
     # Setup secret file
       - name: Azure Login
-        uses: azure/login@v1
+      - uses: azure/login@v1
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           allow-no-subscriptions: true
           enable-AzPSSession: true
       - name: Set Login File
-        uses: azure/powershell@v1
+      - uses: azure/powershell@v1
         with:
           inlineScript: |
             $x=@{}
@@ -55,7 +55,7 @@ jobs:
           azPSVersion: "latest"
     # IntuneCD Backup Prod
       - name: PRE change prod backup
-        run: |  
+      - run: |  
           IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
     # Push pre-change production backup
@@ -69,7 +69,7 @@ jobs:
           git push
     # IntuneCD Push Build to Prod 
       - name: PRE change prod backup
-        run: |  
+      - run: |  
           IntuneCD-startupdate -m 1 -p ./build-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startbackup -m 1 -p ./prod-backup/ -a ../IntuneCD.prod.json
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
