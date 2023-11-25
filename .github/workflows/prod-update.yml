@@ -68,6 +68,7 @@ jobs:
           git add .
           git commit -m "PRE Prod Update - Intune config backup"
           git push
+        continue-on-error: true
     # IntuneCD Push Build to Prod 
       - name: Promote & POST change prod backup
         run: |  
