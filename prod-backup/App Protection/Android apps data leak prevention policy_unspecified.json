@@ -54,6 +54,7 @@
      "appActionIfUnableToAuthenticateUser": null,
      "dialerRestrictionLevel": "allApps",
      "gracePeriodToBlockAppsDuringOffClockHours": null,
+     "protectedMessagingRedirectAppType": "anyApp",
      "targetedAppManagementLevels": "unspecified",
      "appGroupType": "selectedPublicApps",
      "screenCaptureBlocked": false,
@@ -94,6 +95,8 @@
      "requireClass3Biometrics": false,
      "requirePinAfterBiometricChange": false,
      "fingerprintAndBiometricEnabled": null,
+     "messagingRedirectAppPackageId": null,
+     "messagingRedirectAppDisplayName": null,
      "exemptedAppPackages": [
           {
                "name": "Default",

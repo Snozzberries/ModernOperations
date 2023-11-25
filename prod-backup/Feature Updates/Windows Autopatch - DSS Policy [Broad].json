@@ -22,15 +22,6 @@
                     "groupName": "Windows Autopatch - Ring3",
                     "groupType": "StaticMembership"
                }
-          },
-          {
-               "target": {
-                    "@odata.type": "#microsoft.graph.exclusionGroupAssignmentTarget",
-                    "deviceAndAppManagementAssignmentFilterId": null,
-                    "deviceAndAppManagementAssignmentFilterType": "none",
-                    "groupName": "Modern Workplace - Windows 11 Pre-Release Test Devices",
-                    "groupType": "StaticMembership"
-               }
           }
      ]
 }

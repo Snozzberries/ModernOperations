@@ -54,6 +54,7 @@
      "appActionIfUnableToAuthenticateUser": null,
      "dialerRestrictionLevel": "allApps",
      "gracePeriodToBlockAppsDuringOffClockHours": null,
+     "protectedMessagingRedirectAppType": "anyApp",
      "targetedAppManagementLevels": "unspecified",
      "appGroupType": "selectedPublicApps",
      "appDataEncryptionType": "whenDeviceLocked",
@@ -127,6 +128,7 @@
           "https://facetime.apple.com"
      ],
      "minimumWarningSdkVersion": null,
+     "messagingRedirectAppUrlScheme": null,
      "exemptedAppProtocols": [
           {
                "name": "Default",
