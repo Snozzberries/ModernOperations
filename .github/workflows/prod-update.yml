@@ -60,7 +60,6 @@ jobs:
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
         shell: pwsh
     # Push pre-change production backup
-      - uses: actions/checkout@v4
       - name: Push PRE change prod backup
         run: |
           git config user.name "PIPELINE.Server"
@@ -78,7 +77,6 @@ jobs:
           IntuneCD-startdocumentation -t "Prod" -p "./prod-backup" -o "./prod-as-built.md" -d -i "Intune backup and documentation <img align=`"right`" width=`"96`" height=`"96`" src=`"./logo.png`">"
         shell: pwsh
     # Push post-change production backup
-      - uses: actions/checkout@v4
       - name: Push POST change prod backup
         run: |
           git config user.name "PIPELINE.Server"
