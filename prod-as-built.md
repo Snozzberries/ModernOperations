@@ -4,7 +4,7 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
 
 **Tenant:** Prod 
 
-**Document updated on:** 26/11/2023 22:04:56 
+**Document updated on:** 26/11/2023 22:05:26 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -79,6 +79,8 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
             - [Assignments](#assignments)
             - [Configuration](#configuration)
     - [Settings Catalog](#settings-catalog)
+        - [Test](#test)
+            - [Configuration](#configuration)
         - [Windows Autopatch - Data Collection](#windows-autopatch-data-collection)
             - [Assignments](#assignments)
             - [Configuration](#configuration)
@@ -1555,6 +1557,24 @@ Description: Installs necessary client components for the Windows Autopatch serv
 <a class="mk-toclify" id="settings-catalog"></a>
 ## Settings Catalog
 [[back to top](#table-of-contents)]
+<a class="mk-toclify" id="test"></a>
+### Test
+[[back to top](#table-of-contents)]
+<a class="mk-toclify" id="configuration"></a>
+#### Configuration 
+[[back to top](#table-of-contents)]
+|     setting      |                                                                                                                                                                                                          value                                                                                                                                                                                                          |
+|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Creation Source   |                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|Name              |Test                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|Platforms         |windows10                                                                                                                                                                                                                                                                                                                                                                                                                |
+|Priority Meta Data|                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|Role Scope Tag Ids|0<br/>                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|Setting Count     |                                                                                                                                                                                                                                                                                                                                                                                                                        1|
+|Technologies      |mdm                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|Template Reference|**templateId:** <br/>**templateFamily:** none<br/>**templateDisplayName:** None<br/>**templateDisplayVersion:** None<br/>                                                                                                                                                                                                                                                                                                |
+|Settings          |**id:** 0<br/>**@odata.type:** #microsoft.graph.deviceManagementConfigurationChoiceSettingInstance<br/>**settingDefinitionId:** device_vendor_msft_policy_config_browser_allowcookies<br/>**settingInstanceTemplateReference:** None<br/>**choiceSettingValue:** <ul>**settingValueTemplateReference:** None<br/>**value:** device_vendor_msft_policy_config_browser_allowcookies_2<br/>**children:** <ul></ul></ul><br/>|
+
 <a class="mk-toclify" id="windows-autopatch-data-collection"></a>
 ### Windows Autopatch - Data Collection
 [[back to top](#table-of-contents)]
