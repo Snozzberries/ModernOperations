@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 26/11/2023 21:57:58 
+**Document updated on:** 26/11/2023 22:12:53 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -1554,6 +1554,12 @@ Description: This is the default Windows Hello for Business configuration applie
 <a class="mk-toclify" id="test"></a>
 ## Test
 [[back to top](#table-of-contents)]
+### Assignments 
+[[back to top](#table-of-contents)]
+|      target       |filter type|filter name|
+|-------------------|-----------|-----------|
+|Sales and Marketing|none       |           |
+
 ### Configuration 
 [[back to top](#table-of-contents)]
 |     setting      |                                                                                                                                                                                                          value                                                                                                                                                                                                          |

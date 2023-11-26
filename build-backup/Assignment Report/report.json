@@ -1,5 +1,19 @@
 [
      {
+          "groupName": "Sales and Marketing",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Settings Catalog": [
+                    {
+                         "name": "Test",
+                         "type": "",
+                         "intent": ""
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "sg-Sales and Marketing",
           "groupType": "StaticMembership",
           "membershipRule": null,
