@@ -4,7 +4,7 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
 
 **Tenant:** Prod 
 
-**Document updated on:** 27/11/2023 03:18:09 
+**Document updated on:** 28/11/2023 01:52:09 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
