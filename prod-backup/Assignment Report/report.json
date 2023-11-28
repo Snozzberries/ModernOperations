@@ -309,5 +309,19 @@
                     }
                ]
           }
+     },
+     {
+          "groupName": "Retail",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Compliance Policies": [
+                    {
+                         "name": "Test2",
+                         "type": "windows10CompliancePolicy",
+                         "intent": ""
+                    }
+               ]
+          }
      }
 ]
