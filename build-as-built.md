@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 08/12/2023 01:19:08 
+**Document updated on:** 08/12/2023 20:09:24 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -29,6 +29,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
     - [PowerPoint](#powerpoint)
     - [Word](#word)
 - [Compliance Policies](#compliance-policies)
+    - [AZSMUG](#azsmug)
     - [Contoso MDM Compliance Policy for iOS](#contoso-mdm-compliance-policy-for-ios)
     - [Example](#example)
     - [Test2](#test2)
@@ -689,6 +690,55 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 <a class="mk-toclify" id="compliance-policies"></a>
 # Compliance Policies
 [[back to top](#table-of-contents)]
+<a class="mk-toclify" id="azsmug"></a>
+## AZSMUG
+[[back to top](#table-of-contents)]
+Description: 20231208T1304 
+### Configuration 
+[[back to top](#table-of-contents)]
+|                    setting                     |                                                                                                                     value                                                                                                                      |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                      |#microsoft.graph.windows10CompliancePolicy                                                                                                                                                                                                      |
+|Role Scope Tag Ids                              |0<br/>                                                                                                                                                                                                                                          |
+|Display Name                                    |AZSMUG                                                                                                                                                                                                                                          |
+|Password Required                               |False                                                                                                                                                                                                                                           |
+|Password Block Simple                           |False                                                                                                                                                                                                                                           |
+|Password Required To Unlock From Idle           |False                                                                                                                                                                                                                                           |
+|Password Minutes Of Inactivity Before Lock      |                                                                                                                                                                                                                                                |
+|Password Expiration Days                        |                                                                                                                                                                                                                                                |
+|Password Minimum Length                         |                                                                                                                                                                                                                                                |
+|Password Minimum Character Set Count            |                                                                                                                                                                                                                                                |
+|Password Required Type                          |deviceDefault                                                                                                                                                                                                                                   |
+|Password Previous Password Block Count          |                                                                                                                                                                                                                                                |
+|Require Healthy Device Report                   |False                                                                                                                                                                                                                                           |
+|Os Minimum Version                              |                                                                                                                                                                                                                                                |
+|Os Maximum Version                              |                                                                                                                                                                                                                                                |
+|Mobile Os Minimum Version                       |                                                                                                                                                                                                                                                |
+|Mobile Os Maximum Version                       |                                                                                                                                                                                                                                                |
+|Early Launch Anti Malware Driver Enabled        |False                                                                                                                                                                                                                                           |
+|Bit Locker Enabled                              |True                                                                                                                                                                                                                                            |
+|Secure Boot Enabled                             |False                                                                                                                                                                                                                                           |
+|Code Integrity Enabled                          |False                                                                                                                                                                                                                                           |
+|Memory Integrity Enabled                        |False                                                                                                                                                                                                                                           |
+|Kernel Dma Protection Enabled                   |False                                                                                                                                                                                                                                           |
+|Virtualization Based Security Enabled           |False                                                                                                                                                                                                                                           |
+|Firmware Protection Enabled                     |False                                                                                                                                                                                                                                           |
+|Storage Require Encryption                      |False                                                                                                                                                                                                                                           |
+|Active Firewall Required                        |False                                                                                                                                                                                                                                           |
+|Defender Enabled                                |False                                                                                                                                                                                                                                           |
+|Defender Version                                |                                                                                                                                                                                                                                                |
+|Signature Out Of Date                           |False                                                                                                                                                                                                                                           |
+|Rtp Enabled                                     |False                                                                                                                                                                                                                                           |
+|Antivirus Required                              |False                                                                                                                                                                                                                                           |
+|Anti Spyware Required                           |False                                                                                                                                                                                                                                           |
+|Device Threat Protection Enabled                |False                                                                                                                                                                                                                                           |
+|Device Threat Protection Required Security Level|unavailable                                                                                                                                                                                                                                     |
+|Configuration Manager Compliance Required       |False                                                                                                                                                                                                                                           |
+|Tpm Required                                    |False                                                                                                                                                                                                                                           |
+|Device Compliance Policy Script                 |                                                                                                                                                                                                                                                |
+|Valid Operating System Build Ranges             |                                                                                                                                                                                                                                                |
+|Scheduled Actions For Rule                      |**ruleName:** None<br/>**scheduledActionConfigurations:** <ul>**gracePeriodHours:** 0<br/>**actionType:** block<br/>**notificationTemplateId:** 00000000-0000-0000-0000-000000000000<br/>**notificationMessageCCList:** <ul></ul><br/></ul><br/>|
+
 <a class="mk-toclify" id="contoso-mdm-compliance-policy-for-ios"></a>
 ## Contoso MDM Compliance Policy for iOS
 [[back to top](#table-of-contents)]
@@ -729,7 +779,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 <a class="mk-toclify" id="example"></a>
 ## Example
 [[back to top](#table-of-contents)]
-Description: 11\-5\-2023T1716 
+Description: 20230812T1307 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |  target   |filter type|filter name|
