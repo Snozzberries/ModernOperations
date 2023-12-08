@@ -1,12 +1,144 @@
 [
      {
+          "groupName": "Windows Autopatch - Ring2",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - DSS Policy [Fast]",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - Default - Ring2",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "apply"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Windows Autopatch - Last",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - Global DSS Policy",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - Default - Last",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "apply"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Windows Autopatch - Ring1",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - DSS Policy [First]",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - Default - Ring1",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "apply"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Windows Autopatch - Test",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - DSS Policy [Test]",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - Default - Test",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "apply"
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Windows Autopatch - Ring3",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
+               "Feature Updates": [
+                    {
+                         "name": "Windows Autopatch - DSS Policy [Broad]",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "Windows Autopatch Update Policy - Default - Ring3",
+                         "type": "windowsUpdateForBusinessConfiguration",
+                         "intent": "apply"
+                    }
+               ]
+          }
+     },
+     {
           "groupName": "Modern Workplace Devices-Windows Autopatch-Fast",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Scripts": [
+               "Device Configurations": [
                     {
-                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
+                         "name": "Intune data collection policy",
+                         "type": "windowsHealthMonitoringConfiguration",
+                         "intent": "apply"
+                    }
+               ],
+               "Settings Catalog": [
+                    {
+                         "name": "Windows Autopatch - Office Configuration",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Edge Update Channel Stable",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Data Collection",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - MDM wins over GPO",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Office Update Configuration [Fast]",
                          "type": "",
                          "intent": ""
                     }
@@ -18,9 +150,23 @@
                          "intent": ""
                     }
                ],
+               "Scripts": [
+                    {
+                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
+                         "type": "",
+                         "intent": ""
+                    }
+               ]
+          }
+     },
+     {
+          "groupName": "Modern Workplace Devices-Windows Autopatch-Test",
+          "groupType": "StaticMembership",
+          "membershipRule": null,
+          "assignedTo": {
                "Settings Catalog": [
                     {
-                         "name": "Windows Autopatch - MDM wins over GPO",
+                         "name": "Windows Autopatch - Office Update Configuration [Test]",
                          "type": "",
                          "intent": ""
                     },
@@ -30,26 +176,28 @@
                          "intent": ""
                     },
                     {
-                         "name": "Windows Autopatch - Edge Update Channel Stable",
+                         "name": "Windows Autopatch - Edge Update Channel Beta",
                          "type": "",
                          "intent": ""
                     },
                     {
-                         "name": "Windows Autopatch - Office Configuration",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Office Update Configuration [Fast]",
+                         "name": "Windows Autopatch - MDM wins over GPO",
                          "type": "",
                          "intent": ""
                     }
                ],
-               "Device Configurations": [
+               "Driver Updates": [
                     {
-                         "name": "Intune data collection policy",
-                         "type": "windowsHealthMonitoringConfiguration",
-                         "intent": "apply"
+                         "name": "Windows Autopatch - Driver Update Policy [Test]",
+                         "type": "",
+                         "intent": ""
+                    }
+               ],
+               "Scripts": [
+                    {
+                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
+                         "type": "",
+                         "intent": ""
                     }
                ]
           }
@@ -59,9 +207,29 @@
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Scripts": [
+               "Settings Catalog": [
                     {
-                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
+                         "name": "Windows Autopatch - Office Configuration",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Edge Update Channel Stable",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Data Collection",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - MDM wins over GPO",
+                         "type": "",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Windows Autopatch - Office Update Configuration [Broad]",
                          "type": "",
                          "intent": ""
                     }
@@ -73,38 +241,11 @@
                          "intent": ""
                     }
                ],
-               "Settings Catalog": [
+               "Scripts": [
                     {
-                         "name": "Windows Autopatch - MDM wins over GPO",
+                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
                          "type": "",
                          "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Office Update Configuration [Broad]",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Data Collection",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Edge Update Channel Stable",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Office Configuration",
-                         "type": "",
-                         "intent": ""
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "Intune data collection policy",
-                         "type": "windowsHealthMonitoringConfiguration",
-                         "intent": "apply"
                     }
                ]
           }
@@ -114,26 +255,9 @@
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch - Driver Update Policy [First]",
-                         "type": "",
-                         "intent": ""
-                    }
-               ],
                "Settings Catalog": [
                     {
                          "name": "Windows Autopatch - Office Update Configuration [First]",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - MDM wins over GPO",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Data Collection",
                          "type": "",
                          "intent": ""
                     },
@@ -143,167 +267,26 @@
                          "intent": ""
                     },
                     {
-                         "name": "Windows Autopatch - Office Configuration",
-                         "type": "",
-                         "intent": ""
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "Intune data collection policy",
-                         "type": "windowsHealthMonitoringConfiguration",
-                         "intent": "apply"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Modern Workplace Devices-Windows Autopatch-Test",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Driver Updates": [
-                    {
-                         "name": "Windows Autopatch - Driver Update Policy [Test]",
-                         "type": "",
-                         "intent": ""
-                    }
-               ],
-               "Settings Catalog": [
-                    {
-                         "name": "Windows Autopatch - MDM wins over GPO",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Edge Update Channel Beta",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
                          "name": "Windows Autopatch - Data Collection",
                          "type": "",
                          "intent": ""
                     },
                     {
-                         "name": "Windows Autopatch - Office Update Configuration [Test]",
-                         "type": "",
-                         "intent": ""
-                    },
-                    {
-                         "name": "Windows Autopatch - Office Configuration",
+                         "name": "Windows Autopatch - MDM wins over GPO",
                          "type": "",
                          "intent": ""
                     }
                ],
-               "Device Configurations": [
+               "Driver Updates": [
                     {
-                         "name": "Intune data collection policy",
-                         "type": "windowsHealthMonitoringConfiguration",
-                         "intent": "apply"
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Ring2",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - Default - Ring2",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "apply"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - DSS Policy [Fast]",
+                         "name": "Windows Autopatch - Driver Update Policy [First]",
                          "type": "",
                          "intent": ""
                     }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Last",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - Default - Last",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "apply"
-                    }
                ],
-               "Feature Updates": [
+               "Scripts": [
                     {
-                         "name": "Windows Autopatch - Global DSS Policy",
-                         "type": "",
-                         "intent": ""
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Ring1",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - Default - Ring1",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "apply"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - DSS Policy [First]",
-                         "type": "",
-                         "intent": ""
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Ring3",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - Default - Ring3",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "apply"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - DSS Policy [Broad]",
-                         "type": "",
-                         "intent": ""
-                    }
-               ]
-          }
-     },
-     {
-          "groupName": "Windows Autopatch - Test",
-          "groupType": "StaticMembership",
-          "membershipRule": null,
-          "assignedTo": {
-               "Device Configurations": [
-                    {
-                         "name": "Windows Autopatch Update Policy - Default - Test",
-                         "type": "windowsUpdateForBusinessConfiguration",
-                         "intent": "apply"
-                    }
-               ],
-               "Feature Updates": [
-                    {
-                         "name": "Windows Autopatch - DSS Policy [Test]",
+                         "name": "Modern Workplace - Autopatch Client Setup v1.1",
                          "type": "",
                          "intent": ""
                     }
