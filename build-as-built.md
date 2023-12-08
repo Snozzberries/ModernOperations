@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 08/12/2023 00:36:14 
+**Document updated on:** 08/12/2023 00:57:30 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -839,7 +839,7 @@ Description: 11272023T1843
 <a class="mk-toclify" id="test"></a>
 ## Test
 [[back to top](#table-of-contents)]
-Description: 11242023T1851 
+Description: 12072023T1752 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |  target   |filter type|filter name|
@@ -1136,7 +1136,7 @@ Description: 11242023T1905
 <a class="mk-toclify" id="win10-deviceconfig-restrictions"></a>
 ## Win10-DeviceConfig-Restrictions
 [[back to top](#table-of-contents)]
-Description: 12072023T1732 
+Description: 12072023T1753 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |intent|  target   |filter type|filter name|
@@ -1610,7 +1610,7 @@ Description: This is the default Windows Hello for Business configuration applie
 <a class="mk-toclify" id="test"></a>
 ## Test
 [[back to top](#table-of-contents)]
-Description: 12072023T1732 
+Description: 12072023T1752 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |      target       |filter type|filter name|
