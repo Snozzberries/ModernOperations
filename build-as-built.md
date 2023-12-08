@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 08/12/2023 00:57:30 
+**Document updated on:** 08/12/2023 01:14:27 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -839,7 +839,7 @@ Description: 11272023T1843
 <a class="mk-toclify" id="test"></a>
 ## Test
 [[back to top](#table-of-contents)]
-Description: 12072023T1752 
+Description: 12072023T1813 
 ### Assignments 
 [[back to top](#table-of-contents)]
 |  target   |filter type|filter name|
