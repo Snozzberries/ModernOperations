@@ -6,7 +6,7 @@
      "deviceManagementApplicabilityRuleOsEdition": null,
      "deviceManagementApplicabilityRuleOsVersion": null,
      "deviceManagementApplicabilityRuleDeviceMode": null,
-     "description": "12072023T1732",
+     "description": "12072023T1753",
      "displayName": "Win10-DeviceConfig-Restrictions",
      "taskManagerBlockEndTask": false,
      "energySaverOnBatteryThresholdPercentage": null,
