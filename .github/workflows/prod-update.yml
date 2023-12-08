@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "PIPELINE.Server"
           git config user.email "admin@M365x94840470.onmicrosoft.com"
-          git pull origin main
+          git fetch origin main
           git add --all
           git diff --name-only --staged -- prod-backup
           git commit -m "PRE Prod Update - Intune config backup"
