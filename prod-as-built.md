@@ -4,7 +4,7 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
 
 **Tenant:** Prod 
 
-**Document updated on:** 28/11/2023 01:52:48 
+**Document updated on:** 08/12/2023 01:05:52 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -806,7 +806,7 @@ Description: 11242023T1905
 <a class="mk-toclify" id="win10-deviceconfig-restrictions"></a>
 ### Win10-DeviceConfig-Restrictions
 [[back to top](#table-of-contents)]
-Description: 11242023T1905 
+Description: 12072023T1732 
 <a class="mk-toclify" id="assignments"></a>
 #### Assignments 
 [[back to top](#table-of-contents)]
@@ -1620,7 +1620,7 @@ Description: Installs necessary client components for the Windows Autopatch serv
 <a class="mk-toclify" id="test"></a>
 ### Test
 [[back to top](#table-of-contents)]
-Description: 11262023T2007 
+Description: 12072023T1732 
 <a class="mk-toclify" id="configuration"></a>
 #### Configuration 
 [[back to top](#table-of-contents)]
