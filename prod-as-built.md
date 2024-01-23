@@ -4,7 +4,7 @@ Intune backup and documentation <img align=right width=96 height=96 src=./logo.p
 
 **Tenant:** Prod 
 
-**Document updated on:** 08/12/2023 20:13:36 
+**Document updated on:** 23/01/2024 20:14:28 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -1701,6 +1701,7 @@ Description: Allows diagnostic data from this device to be processed by Windows 
 |Modern Workplace Devices-Windows Autopatch-Broad|none       |           |
 |Modern Workplace Devices-Windows Autopatch-First|none       |           |
 |Modern Workplace Devices-Windows Autopatch-Test |none       |           |
+|Windows Autopatch - Devices All                 |none       |           |
 
 <a class="mk-toclify" id="configuration"></a>
 #### Configuration 

@@ -122,6 +122,16 @@
                     "groupName": "Modern Workplace Devices-Windows Autopatch-Test",
                     "groupType": "StaticMembership"
                }
+          },
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "Windows Autopatch - Devices All",
+                    "groupType": "StaticMembership"
+               }
           }
      ]
 }
