@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Prod 
 
-**Document updated on:** 06/07/2024 23:15:42 
+**Document updated on:** 06/07/2024 23:16:15 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -47,6 +47,8 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
     - [Compliance Policies](#compliance-policies)
         - [Contoso MDM Compliance Policy for iOS](#contoso-mdm-compliance-policy-for-ios)
             - [Assignments](#assignments)
+            - [Configuration](#configuration)
+        - [Demo](#demo)
             - [Configuration](#configuration)
     - [Conditional Access](#conditional-access)
         - [Multifactor authentication for Microsoft partners and vendors](#multifactor-authentication-for-microsoft-partners-and-vendors)
@@ -638,6 +640,56 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 |Managed Email Profile Required                      |False                                                                                                                                                                                                                                           |
 |Restricted Apps                                     |                                                                                                                                                                                                                                                |
 |Scheduled Actions For Rule                          |**ruleName:** None<br/>**scheduledActionConfigurations:** <ul>**gracePeriodHours:** 0<br/>**actionType:** block<br/>**notificationTemplateId:** 00000000-0000-0000-0000-000000000000<br/>**notificationMessageCCList:** <ul></ul><br/></ul><br/>|
+
+<a class="mk-toclify" id="demo"></a>
+### Demo
+[[back to top](#table-of-contents)]
+Description: 07062024\-1607 
+<a class="mk-toclify" id="configuration"></a>
+#### Configuration 
+[[back to top](#table-of-contents)]
+|                    setting                     |                                                                                                                     value                                                                                                                      |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Odata type                                      |#microsoft.graph.windows10CompliancePolicy                                                                                                                                                                                                      |
+|Role Scope Tag Ids                              |Default<br/>                                                                                                                                                                                                                                    |
+|Display Name                                    |Demo                                                                                                                                                                                                                                            |
+|Password Required                               |False                                                                                                                                                                                                                                           |
+|Password Block Simple                           |False                                                                                                                                                                                                                                           |
+|Password Required To Unlock From Idle           |False                                                                                                                                                                                                                                           |
+|Password Minutes Of Inactivity Before Lock      |                                                                                                                                                                                                                                                |
+|Password Expiration Days                        |                                                                                                                                                                                                                                                |
+|Password Minimum Length                         |                                                                                                                                                                                                                                                |
+|Password Minimum Character Set Count            |                                                                                                                                                                                                                                                |
+|Password Required Type                          |deviceDefault                                                                                                                                                                                                                                   |
+|Password Previous Password Block Count          |                                                                                                                                                                                                                                                |
+|Require Healthy Device Report                   |False                                                                                                                                                                                                                                           |
+|Os Minimum Version                              |                                                                                                                                                                                                                                                |
+|Os Maximum Version                              |                                                                                                                                                                                                                                                |
+|Mobile Os Minimum Version                       |                                                                                                                                                                                                                                                |
+|Mobile Os Maximum Version                       |                                                                                                                                                                                                                                                |
+|Early Launch Anti Malware Driver Enabled        |False                                                                                                                                                                                                                                           |
+|Bit Locker Enabled                              |False                                                                                                                                                                                                                                           |
+|Secure Boot Enabled                             |False                                                                                                                                                                                                                                           |
+|Code Integrity Enabled                          |False                                                                                                                                                                                                                                           |
+|Memory Integrity Enabled                        |False                                                                                                                                                                                                                                           |
+|Kernel Dma Protection Enabled                   |False                                                                                                                                                                                                                                           |
+|Virtualization Based Security Enabled           |False                                                                                                                                                                                                                                           |
+|Firmware Protection Enabled                     |False                                                                                                                                                                                                                                           |
+|Storage Require Encryption                      |False                                                                                                                                                                                                                                           |
+|Active Firewall Required                        |False                                                                                                                                                                                                                                           |
+|Defender Enabled                                |False                                                                                                                                                                                                                                           |
+|Defender Version                                |                                                                                                                                                                                                                                                |
+|Signature Out Of Date                           |False                                                                                                                                                                                                                                           |
+|Rtp Enabled                                     |False                                                                                                                                                                                                                                           |
+|Antivirus Required                              |False                                                                                                                                                                                                                                           |
+|Anti Spyware Required                           |False                                                                                                                                                                                                                                           |
+|Device Threat Protection Enabled                |False                                                                                                                                                                                                                                           |
+|Device Threat Protection Required Security Level|unavailable                                                                                                                                                                                                                                     |
+|Configuration Manager Compliance Required       |False                                                                                                                                                                                                                                           |
+|Tpm Required                                    |False                                                                                                                                                                                                                                           |
+|Device Compliance Policy Script                 |                                                                                                                                                                                                                                                |
+|Valid Operating System Build Ranges             |                                                                                                                                                                                                                                                |
+|Scheduled Actions For Rule                      |**ruleName:** None<br/>**scheduledActionConfigurations:** <ul>**gracePeriodHours:** 0<br/>**actionType:** block<br/>**notificationTemplateId:** 00000000-0000-0000-0000-000000000000<br/>**notificationMessageCCList:** <ul></ul><br/></ul><br/>|
 
 <a class="mk-toclify" id="conditional-access"></a>
 ## Conditional Access
@@ -1321,7 +1373,7 @@ Description: This is the default Device Limit Restriction applied with the lowes
 |Priority                            |                                                  0|
 |Role Scope Tag Ids                  |                                                   |
 |Device Enrollment Configuration Type|limit                                              |
-|Limit                               |                                                 15|
+|Limit                               |                                                  5|
 
 <a class="mk-toclify" id="all-users-and-all-devices"></a>
 ### All users and all devices
