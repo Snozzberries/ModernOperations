@@ -46,8 +46,8 @@ jobs:
         with:
           inlineScript: |
             $x=@{}
-            $x.TENANT_NAME="8391489f-9e15-4032-ad56-a05b3f69929d"
-            $x.CLIENT_ID="317208ef-be88-405e-be60-722615927c18"
+            $x.TENANT_NAME="547d8e52-d393-46c4-afea-b66aa2c0d151"
+            $x.CLIENT_ID="2dd8c11c-eae5-4fdf-9961-55a9d16fd0d2"
             $x.CLIENT_SECRET=$(Get-AzKeyVaultSecret -VaultName "kv-94840470" -Name "IntuneCDProd" -AsPlainText)
             "{`"params`":$($x|ConvertTo-Json)}"|Out-File ../IntuneCD.prod.json
           azPSVersion: "latest"
