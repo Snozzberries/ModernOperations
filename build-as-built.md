@@ -4,15 +4,12 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Build 
 
-**Document updated on:** 06/07/2024 23:12:32 
+**Document updated on:** 06/07/2024 23:36:30 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
 # Table of Contents
 - [Intune](#intune)
-    - [App Protection](#app-protection)
-    - [iOS Applications](#ios-applications)
-    - [Android Applications](#android-applications)
     - [Compliance Policies](#compliance-policies)
         - [Demo](#demo)
             - [Configuration](#configuration)
@@ -23,7 +20,6 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
             - [Configuration](#configuration)
         - [Office 365 App Control](#office-365-app-control)
             - [Configuration](#configuration)
-    - [Configuration Profiles](#configuration-profiles)
     - [Device Management Settings](#device-management-settings)
         - [Settings](#settings)
             - [Configuration](#configuration)
@@ -43,7 +39,6 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
             - [Assignments](#assignments)
             - [Configuration](#configuration)
     - [Managed Google Play](#managed-google-play)
-    - [Settings Catalog](#settings-catalog)
     - [Scope Tags](#scope-tags)
         - [Default](#default)
             - [Configuration](#configuration)
@@ -52,22 +47,13 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 <a class="mk-toclify" id="intune"></a>
 # Intune
 [[back to top](#table-of-contents)]
-<a class="mk-toclify" id="app-protection"></a>
-## App Protection
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="ios-applications"></a>
-## iOS Applications
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="android-applications"></a>
-## Android Applications
-[[back to top](#table-of-contents)]
 <a class="mk-toclify" id="compliance-policies"></a>
 ## Compliance Policies
 [[back to top](#table-of-contents)]
 <a class="mk-toclify" id="demo"></a>
 ### Demo
 [[back to top](#table-of-contents)]
-Description: 07062024\-1607 
+Description: 07062024\-1631 
 <a class="mk-toclify" id="configuration"></a>
 #### Configuration 
 [[back to top](#table-of-contents)]
@@ -165,9 +151,6 @@ Description: 07062024\-1607
 |Conditions                 |**userRiskLevels:** <ul></ul>**signInRiskLevels:** <ul></ul>**clientAppTypes:** <ul><li> browser </li><li> mobileAppsAndDesktopClients </li></ul>**platforms:** None<br/>**locations:** None<br/>**times:** None<br/>**deviceStates:** None<br/>**devices:** None<br/>**clientApplications:** None<br/>**applications:** <ul>**includeApplications:** <ul><li> 00000002-0000-0ff1-ce00-000000000000 </li><li> 00000003-0000-0ff1-ce00-000000000000 </li></ul>**excludeApplications:** <ul></ul>**includeUserActions:** <ul></ul>**includeAuthenticationContextClassReferences:** <ul></ul>**applicationFilter:** None<br/></ul>**users:** <ul>**includeUsers:** <ul><li> All </li></ul>**excludeUsers:** <ul></ul>**includeGroups:** <ul></ul>**excludeGroups:** <ul></ul>**includeRoles:** <ul></ul>**excludeRoles:** <ul></ul>**includeGuestsOrExternalUsers:** None<br/>**excludeGuestsOrExternalUsers:** None<br/></ul>|
 |Session Controls           |**disableResilienceDefaults:** None<br/>**applicationEnforcedRestrictions:** None<br/>**signInFrequency:** None<br/>**persistentBrowser:** None<br/>**continuousAccessEvaluation:** None<br/>**secureSignInSession:** None<br/>**cloudAppSecurity:** <ul>**cloudAppSecurityType:** mcasConfigured<br/>**isEnabled:** True<br/></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-<a class="mk-toclify" id="configuration-profiles"></a>
-## Configuration Profiles
-[[back to top](#table-of-contents)]
 <a class="mk-toclify" id="device-management-settings"></a>
 ## Device Management Settings
 [[back to top](#table-of-contents)]
@@ -328,9 +311,6 @@ Description: This is the default Windows Hello for Business configuration applie
 
 <a class="mk-toclify" id="managed-google-play"></a>
 ## Managed Google Play
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="settings-catalog"></a>
-## Settings Catalog
 [[back to top](#table-of-contents)]
 <a class="mk-toclify" id="scope-tags"></a>
 ## Scope Tags
