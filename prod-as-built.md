@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Prod 
 
-**Document updated on:** 06/07/2024 23:16:15 
+**Document updated on:** 06/07/2024 23:52:46 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -86,9 +86,6 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
             - [Configuration](#configuration)
     - [Managed Google Play](#managed-google-play)
     - [Powershell Scripts](#powershell-scripts)
-    - [Settings Catalog](#settings-catalog)
-    - [Windows Driver Updates](#windows-driver-updates)
-    - [Windows Feature Updates](#windows-feature-updates)
     - [Scope Tags](#scope-tags)
         - [Default](#default)
             - [Configuration](#configuration)
@@ -1446,15 +1443,6 @@ Description: This is the default Windows Hello for Business configuration applie
 [[back to top](#table-of-contents)]
 <a class="mk-toclify" id="powershell-scripts"></a>
 ## Powershell Scripts
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="settings-catalog"></a>
-## Settings Catalog
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="windows-driver-updates"></a>
-## Windows Driver Updates
-[[back to top](#table-of-contents)]
-<a class="mk-toclify" id="windows-feature-updates"></a>
-## Windows Feature Updates
 [[back to top](#table-of-contents)]
 <a class="mk-toclify" id="scope-tags"></a>
 ## Scope Tags
