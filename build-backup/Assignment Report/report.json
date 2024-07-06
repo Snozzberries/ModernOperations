@@ -1,13 +1,13 @@
 [
      {
-          "groupName": "Sales and Marketing",
+          "groupName": "Retail",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Settings Catalog": [
+               "Compliance Policies": [
                     {
-                         "name": "Test",
-                         "type": "",
+                         "name": "Test2",
+                         "type": "windows10CompliancePolicy",
                          "intent": ""
                     }
                ]
@@ -25,34 +25,7 @@
                          "intent": ""
                     }
                ],
-               "App Protection": [
-                    {
-                         "name": "Android apps data leak prevention policy",
-                         "type": "androidManagedAppProtection",
-                         "intent": ""
-                    },
-                    {
-                         "name": "iOS apps data leak prevention policy",
-                         "type": "iosManagedAppProtection",
-                         "intent": ""
-                    }
-               ],
                "Applications": [
-                    {
-                         "name": "Adobe Acrobat Reader for Intune Android (Deprecated)",
-                         "type": "androidStoreApp",
-                         "intent": "required"
-                    },
-                    {
-                         "name": "Outlook",
-                         "type": "androidStoreApp",
-                         "intent": "required"
-                    },
-                    {
-                         "name": "Outlook",
-                         "type": "iosStoreApp",
-                         "intent": "required"
-                    },
                     {
                          "name": "Word",
                          "type": "iosStoreApp",
@@ -64,14 +37,41 @@
                          "intent": "required"
                     },
                     {
+                         "name": "Excel",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Outlook",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
                          "name": "OneDrive",
                          "type": "iosStoreApp",
                          "intent": "required"
                     },
                     {
-                         "name": "Excel",
-                         "type": "iosStoreApp",
+                         "name": "Adobe Acrobat Reader for Intune Android (Deprecated)",
+                         "type": "androidStoreApp",
                          "intent": "required"
+                    },
+                    {
+                         "name": "Outlook",
+                         "type": "androidStoreApp",
+                         "intent": "required"
+                    }
+               ],
+               "App Protection": [
+                    {
+                         "name": "iOS apps data leak prevention policy",
+                         "type": "iosManagedAppProtection",
+                         "intent": ""
+                    },
+                    {
+                         "name": "Android apps data leak prevention policy",
+                         "type": "androidManagedAppProtection",
+                         "intent": ""
                     }
                ],
                "Device Configurations": [
@@ -84,14 +84,14 @@
           }
      },
      {
-          "groupName": "Retail",
+          "groupName": "Sales and Marketing",
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Compliance Policies": [
+               "Settings Catalog": [
                     {
-                         "name": "Test2",
-                         "type": "windows10CompliancePolicy",
+                         "name": "Test",
+                         "type": "",
                          "intent": ""
                     }
                ]

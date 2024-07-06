@@ -11,5 +11,6 @@
      "enableLogCollection": true,
      "enableAutopilotDiagnostics": true,
      "enableEnhancedTroubleshootingExperience": false,
-     "enableDeviceGroupMembershipReport": false
+     "enableDeviceGroupMembershipReport": false,
+     "m365AppDiagnosticsEnabled": true
 }

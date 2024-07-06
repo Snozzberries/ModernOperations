@@ -3,6 +3,7 @@
      "displayName": "Office 365 App Control",
      "state": "disabled",
      "grantControls": null,
+     "partialEnablementStrategy": null,
      "conditions": {
           "userRiskLevels": [],
           "signInRiskLevels": [],
