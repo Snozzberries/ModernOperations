@@ -5,7 +5,7 @@
      "priority": 0,
      "roleScopeTagIds": [],
      "deviceEnrollmentConfigurationType": "limit",
-     "limit": 15,
+     "limit": 5,
      "assignments": [
           {
                "source": "direct",
