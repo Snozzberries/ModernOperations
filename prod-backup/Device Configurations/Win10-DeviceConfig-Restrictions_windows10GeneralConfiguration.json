@@ -1,12 +1,12 @@
 {
      "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
      "roleScopeTagIds": [
-          "0"
+          "Default"
      ],
      "deviceManagementApplicabilityRuleOsEdition": null,
      "deviceManagementApplicabilityRuleOsVersion": null,
      "deviceManagementApplicabilityRuleDeviceMode": null,
-     "description": "12072023T1753",
+     "description": "",
      "displayName": "Win10-DeviceConfig-Restrictions",
      "taskManagerBlockEndTask": false,
      "energySaverOnBatteryThresholdPercentage": null,

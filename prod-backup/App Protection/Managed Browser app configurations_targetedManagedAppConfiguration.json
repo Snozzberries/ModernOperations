@@ -1,0 +1,32 @@
+{
+     "@odata.type": "#microsoft.graph.targetedManagedAppConfiguration",
+     "displayName": "Managed Browser app configurations",
+     "description": "",
+     "roleScopeTagIds": [
+          "Default"
+     ],
+     "targetedAppManagementLevels": "unspecified",
+     "appGroupType": "selectedPublicApps",
+     "customSettings": [
+          {
+               "name": "com.microsoft.intune.mam.managedbrowser.BlockListURLs",
+               "value": "https://www.aol.com"
+          },
+          {
+               "name": "com.microsoft.intune.mam.managedbrowser.bookmarks",
+               "value": "Outlook Web|https://outlook.office.com||Bing|https://www.bing.com"
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "sg-Sales and Marketing",
+                    "groupType": "StaticMembership"
+               }
+          }
+     ]
+}

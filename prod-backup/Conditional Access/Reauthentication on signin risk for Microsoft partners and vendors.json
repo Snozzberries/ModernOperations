@@ -1,0 +1,68 @@
+{
+     "templateId": "4200930c-0da2-4e33-ca02-100000000000",
+     "displayName": "Reauthentication on signin risk for Microsoft partners and vendors",
+     "state": "enabledForReportingButNotEnforced",
+     "partialEnablementStrategy": null,
+     "conditions": {
+          "userRiskLevels": [],
+          "signInRiskLevels": [
+               "high",
+               "medium",
+               "low"
+          ],
+          "clientAppTypes": [
+               "all"
+          ],
+          "platforms": null,
+          "locations": null,
+          "times": null,
+          "deviceStates": null,
+          "devices": null,
+          "clientApplications": null,
+          "applications": {
+               "includeApplications": [
+                    "All"
+               ],
+               "excludeApplications": [],
+               "includeUserActions": [],
+               "includeAuthenticationContextClassReferences": [],
+               "applicationFilter": null
+          },
+          "users": {
+               "includeUsers": [
+                    "All"
+               ],
+               "excludeUsers": [],
+               "includeGroups": [],
+               "excludeGroups": [],
+               "includeRoles": [],
+               "excludeRoles": [],
+               "includeGuestsOrExternalUsers": null,
+               "excludeGuestsOrExternalUsers": null
+          }
+     },
+     "grantControls": {
+          "operator": "OR",
+          "builtInControls": [
+               "mfa"
+          ],
+          "customAuthenticationFactors": [],
+          "termsOfUse": [],
+          "authenticationStrength": null
+     },
+     "sessionControls": {
+          "disableResilienceDefaults": null,
+          "applicationEnforcedRestrictions": null,
+          "cloudAppSecurity": null,
+          "persistentBrowser": null,
+          "continuousAccessEvaluation": null,
+          "secureSignInSession": null,
+          "signInFrequency": {
+               "value": null,
+               "type": null,
+               "authenticationType": "primaryAndSecondaryAuthentication",
+               "frequencyInterval": "everyTime",
+               "isEnabled": true
+          }
+     }
+}

@@ -1,7 +1,7 @@
 {
      "@odata.type": "#microsoft.graph.iosCompliancePolicy",
      "roleScopeTagIds": [
-          "0"
+          "Default"
      ],
      "description": "",
      "displayName": "Contoso MDM Compliance Policy for iOS",
@@ -35,6 +35,18 @@
                          "notificationMessageCCList": []
                     }
                ]
+          }
+     ],
+     "assignments": [
+          {
+               "source": "direct",
+               "target": {
+                    "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                    "deviceAndAppManagementAssignmentFilterId": null,
+                    "deviceAndAppManagementAssignmentFilterType": "none",
+                    "groupName": "sg-Sales and Marketing",
+                    "groupType": "StaticMembership"
+               }
           }
      ]
 }
