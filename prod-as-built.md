@@ -4,7 +4,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 
 **Tenant:** Prod 
 
-**Document updated on:** 15/07/2024 01:37:04 
+**Document updated on:** 15/07/2024 01:37:27 
 
 <a class="mk-toclify" id="table-of-contents"></a>
 
@@ -645,7 +645,7 @@ Intune backup and documentation <img align="right" width="96" height="96" src=".
 <a class="mk-toclify" id="demo"></a>
 ### Demo
 [[back to top](#table-of-contents)]
-Description: 07062024\-1631 
+Description: 0624 
 <a class="mk-toclify" id="configuration"></a>
 #### Configuration 
 [[back to top](#table-of-contents)]
