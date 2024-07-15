@@ -4,20 +4,6 @@
           "groupType": "StaticMembership",
           "membershipRule": null,
           "assignedTo": {
-               "Compliance Policies": [
-                    {
-                         "name": "Contoso MDM Compliance Policy for iOS",
-                         "type": "iosCompliancePolicy",
-                         "intent": ""
-                    }
-               ],
-               "Device Configurations": [
-                    {
-                         "name": "iOS device restriction to block Game Center",
-                         "type": "iosGeneralDeviceConfiguration",
-                         "intent": "apply"
-                    }
-               ],
                "Applications": [
                     {
                          "name": "Adobe Acrobat Reader for Intune Android (Deprecated)",
@@ -25,17 +11,7 @@
                          "intent": "required"
                     },
                     {
-                         "name": "Outlook",
-                         "type": "iosStoreApp",
-                         "intent": "required"
-                    },
-                    {
                          "name": "PowerPoint",
-                         "type": "iosStoreApp",
-                         "intent": "required"
-                    },
-                    {
-                         "name": "Excel",
                          "type": "iosStoreApp",
                          "intent": "required"
                     },
@@ -48,9 +24,24 @@
                          "name": "OneDrive",
                          "type": "iosStoreApp",
                          "intent": "required"
+                    },
+                    {
+                         "name": "Excel",
+                         "type": "iosStoreApp",
+                         "intent": "required"
+                    },
+                    {
+                         "name": "Outlook",
+                         "type": "iosStoreApp",
+                         "intent": "required"
                     }
                ],
                "App Protection": [
+                    {
+                         "name": "iOS apps data leak prevention policy",
+                         "type": "iosManagedAppProtection",
+                         "intent": ""
+                    },
                     {
                          "name": "Managed Browser app configurations",
                          "type": "targetedManagedAppConfiguration",
@@ -60,11 +51,20 @@
                          "name": "Android apps data leak prevention policy",
                          "type": "androidManagedAppProtection",
                          "intent": ""
-                    },
+                    }
+               ],
+               "Compliance Policies": [
                     {
-                         "name": "iOS apps data leak prevention policy",
-                         "type": "iosManagedAppProtection",
+                         "name": "Contoso MDM Compliance Policy for iOS",
+                         "type": "iosCompliancePolicy",
                          "intent": ""
+                    }
+               ],
+               "Device Configurations": [
+                    {
+                         "name": "iOS device restriction to block Game Center",
+                         "type": "iosGeneralDeviceConfiguration",
+                         "intent": "apply"
                     }
                ]
           }
